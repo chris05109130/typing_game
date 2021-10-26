@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+<div class="over-lay">
+<h1>Typing Challenge</h1>
+    <div class="instructions">
+        <p>Type the word you see in the amount of time given, keep going as long as time allows it...</p>
+        <p>There will be 3 levels given, easy, medium, and hard, each with there own seconds for you to get a chance to type out the word</p>
+    </div>
+<div class="container">
+   <div class="playArea flex">
+        <select name="levels" class="levels">
+            <option value="#">Choose a level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <div class="typeArea flex">
+        <div>
+            <p class="wordToType">Word</p>
+            <input type="text" id="typeValue" placeholder="Type Word Here" autofocus>
+        </div>
+      <p class="end"></p>
+        <div class="scoreBoard flex">
+        <p>Time: <span class="time">0 Seconds</span></p>
+
+<p>   Score: <span class="score">0 Score</span>  </p>  
+
+        </div>
+
+</div>
+</div>
+<div class="gameOver">
+    <div class="box-container">
+
+        <h1>Game Over</h1>
+    <p class="scoreResult">Your Score Was</p>
+    <button class="resetBtn">Reset Game</button>
+    </div>
+    
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
